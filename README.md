@@ -17,17 +17,38 @@ sudo apt-get update
 
 The ppa is avialable [here](https://launchpad.net/~iguanaworks/+archive/ubuntu/iguanair).
 
-For Redhat / Fedora / RPM based distros, our repository is no longer available. You can directly download our latest binary builds [here](https://github.com/iguanaworks/website-backup/tree/main/Binaries).
+For Redhat / Fedora / RPM based distros, our repository is no longer available. But you can directly download our latest binary builds directly from this website.
 
-For Windows, our latest binaries are also availabe [here](https://github.com/iguanaworks/website-backup/tree/main/Binaries).
+For Windows, our latest binaries are also availabe here. 
+
+### Files
+
+<ul>
+  {% for file in site.static_files %}
+    {% if file.path contains '/Binaries' %}
+      <li><a href="{{ file.path | relative_url }}">{{ file.name }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+
 
 ## Documentation
 
-A very basic conversion of our WordPress website to markdown is available [here](https://github.com/iguanaworks/website-backup) and has some basic information about our hardware (see [usb_ir_transceiver.md](https://github.com/iguanaworks/website-backup/blob/main/products/usb-ir-transceiver.md) for example.
+A very basic conversion of your WordPress website was converting to markdown and the product pages can be viewed here:
+
+<ul>
+  {% for page in site.pages %}
+    {% if page.path contains 'products/' %}
+      <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
 
 Additionally, our very out-dated wiki is no longer available, its content has a git backend and is available [here](https://github.com/iguanaworks/Wiki).
 
-## Testing
+## From the Testing
 
 List of files:
 
