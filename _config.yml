@@ -1,3 +1,10 @@
 theme: jekyll-theme-cayman
 title: Iguanaworks (now out of business)
 description: Iguanaworks has closed and our products are no longer sold. But our documentation and open source software is still here.
+header_pages:
+  README.md
+  products/serial-transceiver.md
+  products/usb-ir-transceiver.md
+  products/wired-ir-emitter.md
+  products/wired-ir-receiver.md
+  products/stereo-mono-splitter.md
