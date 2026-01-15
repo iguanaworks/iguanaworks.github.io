@@ -3,15 +3,30 @@
 
 @import "{{ site.theme }}";
 
-/* Persistent navigation under the header */
-.site-nav {
-  margin-top: 1rem;
+/* Top navigation bar */
+.site-nav-top {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
   justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.75rem 1rem;
+  background-color: $header-bg-color;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.site-nav .btn {
+.site-nav-top .btn {
   margin: 0;
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.site-nav-top .btn {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 0.2rem;
 }
