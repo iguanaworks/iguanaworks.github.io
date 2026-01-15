@@ -14,7 +14,7 @@
   </head>
   <body>
 {% if site.buttons %}
-<nav class="site-nav">
+<nav class="site-nav site-nav-top">
   {% for b in site.buttons %}
     <a class="btn" href="{{ b.url | relative_url }}">{{ b.title }}</a>
   {% endfor %}
