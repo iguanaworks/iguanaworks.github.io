@@ -28,7 +28,7 @@ We no longer maintain any repositories, builds or binary files, but still host o
 
 ### Windows
 
-* [IguanaIR-1.1.1.exe](downloads/IguanaIR-1.1.1.exe)
+* [IguanaIR-1.1.1.exe](downloads/windows/IguanaIR-1.1.1.exe)
 
 ### Linux (Debian)
 
