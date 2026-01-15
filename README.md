@@ -24,7 +24,15 @@ Additionally, our very out-dated wiki is no longer available, its content has a 
 
 ## Binary Files
 
-We no longer maintain any builds or binary files. For Ubuntu / Debian, our ppa is not updated, but it has binaries for old distro's that may still work. You can try with
+We no longer maintain any repositories, builds or binary files, but still host our original files
+
+### Windows
+
+* [IguanaIR-1.1.1.exe](downloads/IguanaIR-1.1.1.exe)
+
+### Linux (Debian)
+
+For Ubuntu / Debian, our ppa is not updated, but it has binaries for old distro's that may still work. You can try with
 
 ```
 sudo add-apt-repository ppa:iguanaworks/iguanair
@@ -33,14 +41,20 @@ sudo apt-get update
 
 The ppa is avialable [here](https://launchpad.net/~iguanaworks/+archive/ubuntu/iguanair).
 
-For all other OS's and distros, our latest binary files are available here:
+### Linux (RPM)
 
+Our basic repo repository is at
 
-<ul>
-  {% for file in site.static_files %}
-    {% if file.path contains '/Binaries' %}
-      <li><a href="{{ file.path | relative_url }}">{{ file.name }}</a></li>
-    {% endif %}
-  {% endfor %}
-</ul>
+- [https://iguanaworks.net/downloads/$basearch](https://iguanaworks.net/downloads/$basearch)
 
+Most Recent 32-bit:
+
+* [iguanaIR-1.1.0-1.i686.rpm](downloads/i386/iguanaIR-1.1.0-1.i686.rpm)
+* [iguanaIR-python-1.1.0-1.i686.rpm](downloads/i386/iguanaIR-python-1.1.0-1.i686.rpm)
+* [iguanaIR-reflasher-1.1.0-1.noarch.rpm](downloads/i386/iguanaIR-reflasher-1.1.0-1.noarch.rpm)
+
+Most Recent 64bit:
+
+* [iguanaIR-1.1.0-1.x86_64.rpm](downloads/x86_64/iguanaIR-1.1.0-1.x86_64.rpm)
+* [iguanaIR-python-1.1.0-1.x86_64.rpm](downloads/x86_64/iguanaIR-python-1.1.0-1.x86_64.rpm)
+* [iguanaIR-reflasher-1.1.0-1.noarch.rpm](downloads/x86_64/iguanaIR-reflasher-1.1.0-1.noarch.rpm)
