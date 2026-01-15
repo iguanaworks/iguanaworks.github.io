@@ -26,3 +26,15 @@ For Windows, our latest binaries are also availabe [here](https://github.com/igu
 A very basic conversion of our WordPress website to markdown is available [here](https://github.com/iguanaworks/website-backup) and has some basic information about our hardware (see [usb_ir_transceiver.md](https://github.com/iguanaworks/website-backup/blob/main/products/usb-ir-transceiver.md) for example.
 
 Additionally, our very out-dated wiki is no longer available, its content has a git backend and is available [here](https://github.com/iguanaworks/Wiki).
+
+## Testing
+
+List of files:
+
+<ul>
+  {% for page in site.pages %}
+    {% if page.title %}
+      <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
