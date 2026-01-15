@@ -1,8 +1,9 @@
 ---
 title: "Serial Transceiver"
 date: 2017-05-23
-coverImage: "images/Serial-Transceiver-310x310.jpg"
 ---
+
+![Serial Transceiver Image](/images/Serial-Transceiver-310x310.jpg)
 
 We’ve designed a small board that acts as an IR receiver and a high-powered transmitter. It’s small and light enough to hang off of a serial port, doesn’t need batteries, and has a transmit range on the order of 10 meters.
 
