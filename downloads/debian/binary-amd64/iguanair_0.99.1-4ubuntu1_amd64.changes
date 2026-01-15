@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Sun, 23 Nov 2008 16:36:37 -0500
+Source: iguanair
+Binary: iguanair iguanair-python iguanair-reflasher
+Architecture: source amd64 all
+Version: 0.99.1-4ubuntu1
+Distribution: gutsy
+Urgency: low
+Maintainer: IguanaWorks [support@iguanaworks.net]
+Changed-By: Ben Luey <bluey@iguanaDevUbuntu64>
+Description: 
+ iguanair   - This is the IguanaWorks USB IR daemon/driver and
+ iguanair-python - This is the Python client bindings IguanaWorks USB IR
+ iguanair-reflasher - The program will reflash the IguanaWorks USB IR Transceiver with 
+Changes: 
+ iguanair (0.99.1-4ubuntu1) gutsy; urgency=low
+ .
+   * 0.99 IguanaWorks Release
+Checksums-Sha1: 
+ 9579207d033687ad3b1c9130d868552b08cc5e2e 642 iguanair_0.99.1-4ubuntu1.dsc
+ f72001c9016caa2265913475bc0d37bda9124dfe 175581 iguanair_0.99.1-4ubuntu1.tar.gz
+ 22d1c612b7fc6480fa83c189c194796f9ba0167a 73126 iguanair_0.99.1-4ubuntu1_amd64.deb
+ fd61731cafb2a490db099823263e8422031146cc 20502 iguanair-python_0.99.1-4ubuntu1_amd64.deb
+ f4813de073a7868278f2c55ec35ba2fccd3e75fd 33660 iguanair-reflasher_0.99.1-4ubuntu1_all.deb
+Checksums-Sha256: 
+ d1789d4de066b489d861f59abcd24d71f2d2a48a6b5ee3d32677804127cce686 642 iguanair_0.99.1-4ubuntu1.dsc
+ 6bb6af730535c2f139c44bd02ebd27d9bc5c1af3b575d1ae3c4a8e8f5c8a16ad 175581 iguanair_0.99.1-4ubuntu1.tar.gz
+ 9c1b487f6ddce8bed125610a0d5158282f660018a8ba26e9248482848f2097b4 73126 iguanair_0.99.1-4ubuntu1_amd64.deb
+ e2791b07f3a6b2874561a1e7d852a8252a6e515753c73a657773593aafca85d4 20502 iguanair-python_0.99.1-4ubuntu1_amd64.deb
+ 1616f5754158cf1373576628e4daffd02e1402bd55241623af15b20f4110c2a8 33660 iguanair-reflasher_0.99.1-4ubuntu1_all.deb
+Files: 
+ e16a2b9340204d3743ff417f5f1f2f4b 642 utils optional iguanair_0.99.1-4ubuntu1.dsc
+ cf82d857c97ea56b47aa15edcfad4466 175581 utils optional iguanair_0.99.1-4ubuntu1.tar.gz
+ 52bc959520eae354f01a21a3d68103e7 73126 utils optional iguanair_0.99.1-4ubuntu1_amd64.deb
+ 9481eb5e06cd6cb177fa75634b5082c0 20502 utils optional iguanair-python_0.99.1-4ubuntu1_amd64.deb
+ 5ea258bad888619bda5666e776e7fc2c 33660 utils optional iguanair-reflasher_0.99.1-4ubuntu1_all.deb

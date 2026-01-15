@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Fri, 27 Mar 2008 23:28:45 +1000
+Source: iguanair
+Binary: iguanair iguanair-python iguanair-reflasher
+Architecture: source i386 all
+Version: 0.97.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: IguanaWorks [support@iguanaworks.net]
+Changed-By: IguanaWorks Support <support@iguanaworks.net>
+Description: 
+ iguanair   - This is the IguanaWorks USB IR daemon/driver and
+ iguanair-python - This is the Python client bindings IguanaWorks USB IR
+ iguanair-reflasher - The program will reflash the IguanaWorks USB IR Transceiver with 
+Changes: 
+ iguanair (0.97.1-1) unstable; urgency=low
+ .
+   * Upgraded to the 0.97 source (bug fixes)
+Checksums-Sha1: 
+ 9289680e670ffc9413bdb94af3513eaa2d86e46d 510 iguanair_0.97.1-1.dsc
+ dd4744bf60cb3d08e394262bf4fe42bd257bb25e 474445 iguanair_0.97.1-1.tar.gz
+ 0845c3311d77adfd63005318da0379e1b17c44c5 39194 iguanair_0.97.1-1_i386.deb
+ c98cff3373da6508b0051a06aaa8121cc31b6fd6 16932 iguanair-python_0.97.1-1_i386.deb
+ 9bd8a5c7cf913208c21eeb3ab0fa88bfbf6e39ff 35828 iguanair-reflasher_0.97.1-1_all.deb
+Checksums-Sha256: 
+ b279ac0c38653a5753ddf8f488c5ccd77947914470bb3d6ec318445ab82234ca 510 iguanair_0.97.1-1.dsc
+ 07f8ca2343b261c9871cd1eaaa501cf80822f44340ca307dacd37984db8e7800 474445 iguanair_0.97.1-1.tar.gz
+ 6968e2d51570da66b8803369d5b66b0794c5db0328b8182935e2b01b3a031b05 39194 iguanair_0.97.1-1_i386.deb
+ 3b88d8c9ae6050676dddc3adc34d7155dd01b2305d31f4e1094862a8ad407264 16932 iguanair-python_0.97.1-1_i386.deb
+ 46d2f63433b3f5201a1e5f350be34066e5871e9c84f1faea4392b4fdac2d53f4 35828 iguanair-reflasher_0.97.1-1_all.deb
+Files: 
+ f45b0b53bc75d3bb2d8e1c48275e8bab 510 utils optional iguanair_0.97.1-1.dsc
+ 6369908c4b440350115fd9459170c7da 474445 utils optional iguanair_0.97.1-1.tar.gz
+ fcb190d2873a0273a7a6db6680e6ac8f 39194 utils optional iguanair_0.97.1-1_i386.deb
+ 45acc78277b4f5e52cb04875d262edd1 16932 utils optional iguanair-python_0.97.1-1_i386.deb
+ 84e1ae402f7be783bdcddcde569f9249 35828 utils optional iguanair-reflasher_0.97.1-1_all.deb

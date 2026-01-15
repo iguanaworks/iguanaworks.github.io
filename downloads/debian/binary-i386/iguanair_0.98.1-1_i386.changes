@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Mon, 18 Aug 2008 20:42:17 -0600
+Source: iguanair
+Binary: iguanair iguanair-python iguanair-reflasher
+Architecture: source i386 all
+Version: 0.98.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: IguanaWorks [support@iguanaworks.net]
+Changed-By: IguanaWorks Support <support@iguanaworks.net>
+Description: 
+ iguanair   - This is the IguanaWorks USB IR daemon/driver and
+ iguanair-python - This is the Python client bindings IguanaWorks USB IR
+ iguanair-reflasher - The program will reflash the IguanaWorks USB IR Transceiver with 
+Changes: 
+ iguanair (0.98.1-1) unstable; urgency=low
+ .
+   * Upgrade to the 0.98 source.
+   * Fixed some debian specific packaging dependencies
+Checksums-Sha1: 
+ e40a93c4e015ccb3826971dcfd5a634190078ef7 588 iguanair_0.98.1-1.dsc
+ d5e071fdfa24dac317175a257d71e1e023ebd51d 315196 iguanair_0.98.1-1.tar.gz
+ 246ec31a138e5062396f58b10744e88b1990c630 39968 iguanair_0.98.1-1_i386.deb
+ 2be99291eaf4d77fbe5e930470870b8b1b7cc222 16986 iguanair-python_0.98.1-1_i386.deb
+ 49afd43395cc0ff61446601a26a4c67b8cc297d0 35206 iguanair-reflasher_0.98.1-1_all.deb
+Checksums-Sha256: 
+ ca7f6ed11ed695a03785fed1fa485f75209bc5327cbb12521833f88e977adee6 588 iguanair_0.98.1-1.dsc
+ 3b100e2177558f3cfbb2119f05163fb1021d6f6400996683bd27049a336747cf 315196 iguanair_0.98.1-1.tar.gz
+ 6149a50ca14437ca5590a74d0487fb43e9d09615592ba2ff5cfb91e41bad384d 39968 iguanair_0.98.1-1_i386.deb
+ 6c2284e1edf38c62858d498cb764d85b0ab343bb171cf9f0b2fc721e654ad195 16986 iguanair-python_0.98.1-1_i386.deb
+ 2e3422dda9797fd1a8c12cb85e1194ea02c3ce36fbedd48a2911153ad8f9ad58 35206 iguanair-reflasher_0.98.1-1_all.deb
+Files: 
+ d3cf67b71cf3e8fe2d922371c4f12472 588 utils optional iguanair_0.98.1-1.dsc
+ bd638e3a85b77f8173b62f5e49478412 315196 utils optional iguanair_0.98.1-1.tar.gz
+ 2b70ee0624513781fdb27994e1acb14a 39968 utils optional iguanair_0.98.1-1_i386.deb
+ c65a23fb9d7f6cf1c073e71a89a344bb 16986 utils optional iguanair-python_0.98.1-1_i386.deb
+ abd4f8bb39c9d6d6f29d576947663b90 35206 utils optional iguanair-reflasher_0.98.1-1_all.deb

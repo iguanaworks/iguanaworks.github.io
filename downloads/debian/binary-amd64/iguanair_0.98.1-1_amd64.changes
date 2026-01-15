@@ -1,0 +1,25 @@
+Format: 1.7
+Date: Mon, 18 Aug 2008 20:42:17 -0600
+Source: iguanair
+Binary: iguanair-python iguanair-reflasher iguanair
+Architecture: source all amd64
+Version: 0.98.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: IguanaWorks [support@iguanaworks.net]
+Changed-By: IguanaWorks Support <support@iguanaworks.net>
+Description: 
+ iguanair   - This is the IguanaWorks USB IR daemon/driver and
+ iguanair-python - This is the Python client bindings IguanaWorks USB IR
+ iguanair-reflasher - The program will reflash the IguanaWorks USB IR Transceiver with 
+Changes: 
+ iguanair (0.98.1-1) unstable; urgency=low
+ .
+   * Upgrade to the 0.98 source.
+   * Fixed some debian specific packaging dependencies
+Files: 
+ 9c9a2841eda6fdfca033d4f1d41dbd09 380 utils optional iguanair_0.98.1-1.dsc
+ 7955e57dca582d932ff10fbb93102f27 172674 utils optional iguanair_0.98.1-1.tar.gz
+ cacb81e90f562f3dc0cbceb932e0a8ae 47206 utils optional iguanair_0.98.1-1_amd64.deb
+ 1210f3fb7be315a7d0871f0fef5fb1e9 19614 utils optional iguanair-python_0.98.1-1_amd64.deb
+ b37fedf7db56066a021d3c16ea260491 32780 utils optional iguanair-reflasher_0.98.1-1_all.deb

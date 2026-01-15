@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 21 Aug 2012 20:01:44 -0600
+Source: iguanair
+Binary: iguanair iguanair-python iguanair-reflasher
+Architecture: source amd64 all
+Version: 1.0.3-1ubuntu1
+Distribution: precise
+Urgency: low
+Maintainer: IguanaWorks [support@iguanaworks.net]
+Changed-By: Iguanaworks Support <support@iguanaworks.net>
+Description: 
+ iguanair   - This is the IguanaWorks USB IR daemon/driver and
+ iguanair-python - This is the Python client bindings IguanaWorks USB IR
+ iguanair-reflasher - The program will reflash the IguanaWorks USB IR Transceiver with
+Changes: 
+ iguanair (1.0.3-1ubuntu1) precise; urgency=low
+ .
+   * 1.0.3 Iguanaworks Release
+   * 0308 Firmware and driver support for 0308 firmware
+   * Restart on device disconnect fixes issues on some systems with usb power management problems.
+Checksums-Sha1: 
+ 55d906848698075b22c0ef6dfffd666026035243 755 iguanair_1.0.3-1ubuntu1.dsc
+ a926ce1e37214e06d44f39657dfee914d7377bb5 245180 iguanair_1.0.3-1ubuntu1.tar.gz
+ b75054764b8d1820bdd2a9de492e147b48740409 82578 iguanair_1.0.3-1ubuntu1_amd64.deb
+ da990d815021ce68a26253da97de482aee6c3ddf 21158 iguanair-python_1.0.3-1ubuntu1_amd64.deb
+ 22ebefb2c7a69a4727db61e35e103cbcf4db96b0 44434 iguanair-reflasher_1.0.3-1ubuntu1_all.deb
+Checksums-Sha256: 
+ be80128a51de5a08a1b7d15e6b5e155881ed09b02d0be13eec32c57922f2cfcb 755 iguanair_1.0.3-1ubuntu1.dsc
+ a474ee45ec1de8bf2101b2a1d2522e7dbfc055bec5f5be9ca52bf134e66a08ce 245180 iguanair_1.0.3-1ubuntu1.tar.gz
+ d61ac583c9bf2f64b3848d1433d322966e9fa7f18e7309355e79464ca514f1ff 82578 iguanair_1.0.3-1ubuntu1_amd64.deb
+ 296b79fa2fcda27f70bd25631ccd799a1e04e2bf2d155158401db541f41f939f 21158 iguanair-python_1.0.3-1ubuntu1_amd64.deb
+ 6ad0f9f70efa1e12150709a9c2a3967d087a2dcc25af5bce7d4c35356fc21616 44434 iguanair-reflasher_1.0.3-1ubuntu1_all.deb
+Files: 
+ fee370a505435f28c19bf0510fe6b1c3 755 utils optional iguanair_1.0.3-1ubuntu1.dsc
+ 0034612672fc2c0feb544951c402a231 245180 utils optional iguanair_1.0.3-1ubuntu1.tar.gz
+ a718e282d69bdde3a4a5ca2d3547a758 82578 utils optional iguanair_1.0.3-1ubuntu1_amd64.deb
+ e562284dc375b4c74536ddb627ede057 21158 utils optional iguanair-python_1.0.3-1ubuntu1_amd64.deb
+ e49cd189dadda35a93fc2014a8cce8bb 44434 utils optional iguanair-reflasher_1.0.3-1ubuntu1_all.deb

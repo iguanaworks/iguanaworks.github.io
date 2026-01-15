@@ -1,0 +1,157 @@
+Format: 1.8
+Date: Sun, 20 Feb 2011 22:32:56 +0100
+Source: lirc
+Binary: lirc lirc-x liblircclient-dev liblircclient0
+Architecture: armhf
+Version: 0.9.0~pre1-1
+Distribution: unstable
+Urgency: low
+Maintainer: lirc Maintainer Team <pkg-lirc-maint@lists.alioth.debian.org>
+Changed-By: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Description: 
+ liblircclient-dev - infra-red remote control support - client library development fil
+ liblircclient0 - infra-red remote control support - client library
+ lirc       - infra-red remote control support
+ lirc-x     - infra-red remote control support - X utilities
+Closes: 162933 414014 496681 500429 500714 505049 517507 546247 547359 548826 551706 562512 580666 588027 605610 607575
+Changes: 
+ lirc (0.9.0~pre1-1) unstable; urgency=low
+ .
+   [ Sven Mueller ]
+   * remove myself from uploaders
+ .
+   [ Stefan Lippers-Hollmann ]
+   * new upstream version 0.9.0~pre1:
+     - rediff patches against 0.8.6:
+       + drop 20_kcompat-2.6.26.patch, applied upstream.
+       + drop 21_silence-LIRC_MODE_LIRCCODE-logmessage.patch, it's no longer
+         necessary due to udev & hal acting upon hotplug events.
+       + drop 22_kcompat-2.6.27.patch, applied upstream.
+       + drop 23_man_pages_style_fixes.patch, mostly applied upstream.
+       + drop 24_kcompat-2.6.29.patch, applied upstream.
+       + drop 25_kcompat-2.6.31.patch, applied upstream.
+     - fixed by the new upstream version:
+       + lirc: Please update to version 0.8.4a (Closes: #517507).
+       + lirc: The version upstream is now at 0.8.6. Please upgrade this
+         package as it's a show stopper for me (Closes: #548826).
+       + lirc-modules-source: lirc_imon doesnt find hardware (Closes: #500714).
+       + lirc: Please add support for blaster of Hauppauge PVR150
+         (Closes: 505049).
+     - rediff patches against 0.8.7:
+       + drop 23_kcompat-2.6.32.patch, merged upstream
+       + drop kcompat-2.6.33.patch, merged upstream
+       + drop kcompat-2.6.35.patch, merged upstream
+       + add fix-kfreebsd-ftbs.patch
+     - fixes FTBS on Debian/ kFreeBSD, introduced in 0.8.6
+     - rediff patches against 0.9.0~pre1:
+       + import upstream changes (lirc-0.8.7-63-g77c9429):
+         ~ Remove-a-few-more-CVS-relics
+         ~ add-release-process-notes-for-my-own-sanity
+         ~ add-lirc-encoder-decoder-regression-test
+         ~ make-all-remote-names-unique
+         ~ updated-firefly-remote-definition-from-Bastien-Nocer
+         ~ try-to-standardize-remote-key-names-a-fair-bit
+         ~ lirc_serial-fill-in-dev-pointer
+         ~ Attempt-to-make-lirc_sir-behave-a-bit-better
+         ~ lirc_serial-resync-with-in-kernel-bits
+         ~ commandir-send_status-vs.-packetCounter-bug-fix
+         ~ lirc_serial-fix-tx-support-and-a-memory-leak
+       + drop 99_linux-input-layer_config, it should be obsolete now.
+       + drop lirc-in-kernel-ioctls, merged upstream.
+       + drop 18_pinsys-keycodes.
+       + update fix-kfreebsd-ftbs.patch to fix newly introduced __u32/ __u64
+         breakage on kFreeBSD; extend this change to all non-linux
+         architectures, given that it fails on hurd as well. Use stdint.h and
+         ISO C99 uint32_t/ uint64_t.
+       + drop 11_cheklib_fix.patch; while it is technically correct, it doesn't
+         actually have a real effect and is not upstreamable.
+       + drop 90_make-module-defines-unique.patch and warning-cleanup.patch,
+         lirc-modules-source doesn't get built anymore.
+       + avoid patching generated Makefiles by ensuring identical dates to avoid
+         autofoo/ libtool; this allows dropping 02_Makefiles.patch.
+       + drop 12_enodev_on_read.patch, it doesn't appear to be required anymore.
+   * suggest setserial (Closes: #546247).
+   * drop the udevadm settle call from the init script, it can lead to a
+     deadlock in combination with hotpluggable/ udev aware devices.
+   * fix conditional branches for 22_kcompat-2.6.27.patch (Closes: #547359).
+   * switch to Debian source format 3.0 (quilt).
+   * adapt watch file for bzip2 tarballs.
+   * drop debian/TODO, most entries are obsolete.
+   * create /var/run/lirc/ as needed.
+   * use --oknodo for start-stop-daemon.
+   * lirc 0.8.6 moves the lircd socket from /dev/ to /var/run/lirc/, create a
+     symlink to retain compatibility with old clients.
+   * partial sync with Ubuntu's lirc 0.8.6-0ubuntu2:
+     [ Mario Limonciello ]
+     - debian/control: add build-depends on libftdi-dev to prevent FTBFS.
+     - [PATCH 8/8] Add udev support to lirc and init script
+     - remove build time debug messages for kernel drivers
+   * add compatibility for kernel 2.6.32 (Closes: #562512, #588027).
+   * add compatibility for kernel 2.6.33/ 2.6.34.
+   * add maintainerclean target to debian/rules, to ease dealing with the
+     current way of maintaining the lirc package with svn-buildpackage's
+     mergeWithUpstream mode.
+   * document the kernel/ userspace ABI breakage between lirc 0.8.6 and earlier
+     versions in NEWS.
+   * debian/rules: fix stanza dependencies for parallel building (FTBS on
+     buildds with activated build concurrency).
+   * fix lintian complaint about "lirc: conflicts-with-version makedev
+     (<< 2.3.1-88)", a recent enough makedev (or none at all, if using udev) is
+     only required by postinst, not at unpack time.
+   * debian/NEWS: fix cosmetic formatting issues as pointed out by lintian:
+     - lirc: debian-news-entry-uses-asterisk
+     - lirc: debian-news-entry-without-blank-line line 13
+   * add compatibility for kernel 2.6.35.
+   * bump compat level to 8, supported by debhelper >=7.9.3 in squeeze.
+     - replace dh_clean -k by dh_prep.
+   * drop silent clobbering of the lirc configuration with misplaced files.
+   * make syntax check for hardware.conf more robust.
+   * drop obsolete lirc-svga package, its functionality is also provided by
+     lirc-x and has only been built for x86.
+   * drop and conflict with (using breaks) lirc-modules-source, starting with
+     kernel 2.6.36 lirc has been merged mainline and this package targets
+     post-squeeze anyways - this indirectly fixes:
+     - Failed to attach i2c client PV951 IR at 0x4b (-17) (Closes: #500429)
+     - lirc 0.8.3-5 breaks mceusb2 remote (Closes: #551706), replaced by new
+       in-kernel RC_CORE module "mceusb".
+     - lirc_sir: device fails to resume after suspend (Closes: #414014)
+     - sysfs: duplicate filename '0-0018' can not be created (Closes: #496681)
+   * rename patches for upstream submission:
+     - 04_man_pages_syntax_fixes.patch --> man-pages_syntax-fixes.patch
+     - 05_non_linux.patch --> lirc_fix-build-on-non-Linux-architectures.patch
+     - 22_fix-spelling-errors.patch --> lirc_fix-spelling-errors.patch
+     - 13_hurd_define_iotbase_u32.patch --> hurd_define-iotbase_u32.patch
+   * external ABI between kernel modules broke between 0.8.3 --> 0.8.4 and
+     0.8.7 --> 0.9.0, break lirc-modules-source (<<0.9.0~).
+   * drop obsolete debconf configuration:
+     - lirc should use debconf more fully (Closes: #162933)
+     - [INTL:nl] Updated Dutch po-debconf translation (Closes: #605610).
+     - [INTL:da] Danish translation of the debconf templates (Closes: #607575)
+   * drop pre-woody compatibility.
+   * don't try to install the upstream "ChangeLog", it's empty since upstream
+     moved to git.
+   * don't symlink /usr/share/doc/<package>/ anymore.
+   * declare a build-conflicts with libsvga1-dev.
+   * suggest "ir-keytable", it is required to configure scancodes for in-kernel
+     modules using the new RC_CORE subsystem.
+   * bump standards version to 3.9.1, now that the major roadblocks are finally
+     fixed.
+   * document that lirc uses syslog for all logging functionality since 0.6.5-1,
+     (Closes: #580666).
+   * use current maintainer script syntax.
+   * drop pre-squeeze versioned depends.
+Checksums-Sha1: 
+ f29625f80ae1b71b079d1c0d6c01d1d6acd1b136 566668 lirc_0.9.0~pre1-1_armhf.deb
+ 6527b1874e9b9ab2dfcd121109d11adbc8da7faa 114842 lirc-x_0.9.0~pre1-1_armhf.deb
+ 50f42cee8c2ad5e551515940f52c153151f4d02f 37520 liblircclient-dev_0.9.0~pre1-1_armhf.deb
+ cfd0bfc2051e3991d514f8cef683f4e89194b665 35232 liblircclient0_0.9.0~pre1-1_armhf.deb
+Checksums-Sha256: 
+ 8918f613e23234f42e2aff9e1a21426752c3d737a30179c3b08eda723589fbfc 566668 lirc_0.9.0~pre1-1_armhf.deb
+ dc90184661d6e2912914182008cb278dd8023476e71c645d9c3535353a462b1e 114842 lirc-x_0.9.0~pre1-1_armhf.deb
+ 7a97e61af88a0d124147b9f782d2f81e2262a04c9ca365d68a3cbcaa3e103d2c 37520 liblircclient-dev_0.9.0~pre1-1_armhf.deb
+ ec4cefa8332eb49d02a8ab5987bdc0918f491c4e868c60530029a0f7d01e12b4 35232 liblircclient0_0.9.0~pre1-1_armhf.deb
+Files: 
+ 0e73ca0886740c3eba34d0e083fc634a 566668 utils extra lirc_0.9.0~pre1-1_armhf.deb
+ c75db7b6f4c0712a4aa8e68ec43e1afd 114842 utils extra lirc-x_0.9.0~pre1-1_armhf.deb
+ 9a7fa0e5b1f202493b5d8865786ee0ac 37520 libdevel extra liblircclient-dev_0.9.0~pre1-1_armhf.deb
+ 298b6e7a0180823cf1b4f9950e1173ae 35232 libs optional liblircclient0_0.9.0~pre1-1_armhf.deb

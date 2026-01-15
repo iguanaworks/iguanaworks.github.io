@@ -1,0 +1,37 @@
+Format: 1.8
+Date: Sun, 13 Jan 2013 15:00:14 -0700
+Source: iguanair
+Binary: iguanair iguanair-python iguanair-reflasher
+Architecture: source i386 all
+Version: 1.0.4-1
+Distribution: stable
+Urgency: low
+Maintainer: IguanaWorks [support@iguanaworks.net]
+Changed-By: Iguanaworks Support <support@iguanaworks.net>
+Description: 
+ iguanair   - This is the IguanaWorks USB IR daemon/driver and
+ iguanair-python - This is the Python client bindings IguanaWorks USB IR
+ iguanair-reflasher - The program will reflash the IguanaWorks USB IR Transceiver with
+Changes: 
+ iguanair (1.0.4-1) stable; urgency=low
+ .
+   * 1.0.4 Iguanaworks Release
+   * Various packaging improvement to be standards compliant.
+Checksums-Sha1: 
+ 546dbfe1672b35e4e4646e851cea7ce3a00df2ae 709 iguanair_1.0.4-1.dsc
+ e50cf41eab7d03f76f2c3835685f303cfe76a775 231017 iguanair_1.0.4-1.tar.gz
+ 9853d555743045947effdbdece2f377ca8e6bd6f 79032 iguanair_1.0.4-1_i386.deb
+ 24619b44612b5862a0d9ccbd5f97576b1645048e 21384 iguanair-python_1.0.4-1_i386.deb
+ 6116a756d2af5912d7a1f4c8c9feae4a547e4c44 43868 iguanair-reflasher_1.0.4-1_all.deb
+Checksums-Sha256: 
+ fbefed187b27ba991e9a47e2f675def7daac3790a355c11af22cb667d22c39c9 709 iguanair_1.0.4-1.dsc
+ 3d59b596e19a51caa979f267c981f222735b15966884ca5bb02e871764de37fd 231017 iguanair_1.0.4-1.tar.gz
+ 0db7c3868638b70e13e00af68c1706cf82f30ac8cb82d3aa786f5c6d57976dd1 79032 iguanair_1.0.4-1_i386.deb
+ 8bf6696f7909f984a0df065ea4c56783128cc2629357f3eac77a748e547fdc05 21384 iguanair-python_1.0.4-1_i386.deb
+ db3e6cd0d7ae5fe1ec5a97490524625f5fa87ef2c2ff0aa79becb1c1e3bb121f 43868 iguanair-reflasher_1.0.4-1_all.deb
+Files: 
+ e1b26c2c406b537fb9058a99c6f65e35 709 utils optional iguanair_1.0.4-1.dsc
+ 7c07794da303160f5f0f45cb7ffa2c95 231017 utils optional iguanair_1.0.4-1.tar.gz
+ e92c62ec37777211142863914f68902a 79032 utils optional iguanair_1.0.4-1_i386.deb
+ 53fe954c347b9613cacf89703069a5ca 21384 utils optional iguanair-python_1.0.4-1_i386.deb
+ 5c0b32e4f19e47643ccbb8036d7dcdb3 43868 utils optional iguanair-reflasher_1.0.4-1_all.deb

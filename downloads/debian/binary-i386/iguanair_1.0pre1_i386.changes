@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Sun, 12 Jul 2009 18:07:25 -0400
+Source: iguanair
+Binary: iguanair iguanair-python iguanair-reflasher
+Architecture: source i386 all
+Version: 1.0pre1
+Distribution: jaunty
+Urgency: low
+Maintainer: IguanaWorks [support@iguanaworks.net]
+Changed-By: Ben Luey <bluey@iguanaDev>
+Description: 
+ iguanair   - This is the IguanaWorks USB IR daemon/driver and
+ iguanair-python - This is the Python client bindings IguanaWorks USB IR
+ iguanair-reflasher - The program will reflash the IguanaWorks USB IR Transceiver with 
+Changes: 
+ iguanair (1.0pre1) jaunty; urgency=low
+ .
+   * Pre Release of 1.0.
+Checksums-Sha1: 
+ 80bda383d65e363edab24ae8dab12013985e5aa6 610 iguanair_1.0pre1.dsc
+ 469586fb8b42c12523cd3395d1e07f666d922b7d 177564 iguanair_1.0pre1.tar.gz
+ 9c5551b36cb3ea3959bef387aa917be3e4904501 70110 iguanair_1.0pre1_i386.deb
+ f0a0d7eedf28d6cfa1fe479ab009749b8135eb9d 18120 iguanair-python_1.0pre1_i386.deb
+ 913229dfffe83226bc3cf3e26c861abb8d4e4c41 37642 iguanair-reflasher_1.0pre1_all.deb
+Checksums-Sha256: 
+ d533258198cb4a331a5f32f783dea681cf0442ca9682c25fa6d385aca9cccb68 610 iguanair_1.0pre1.dsc
+ 85bb86ca6d3653a6fe82a56383a0f574eadd333ac6be22bca8bc990d28b99ac1 177564 iguanair_1.0pre1.tar.gz
+ b36f7dfbd3e32f733f53a407bf5af831b9e1803dd62f81df823ee0dd74e6ccef 70110 iguanair_1.0pre1_i386.deb
+ 5d88258423c16e8dac774df2158687b260599cabb4776eb5163c33e7bc07d277 18120 iguanair-python_1.0pre1_i386.deb
+ 9d392f5ee3055b3ad38d3de8b108306f8612e9a3d6ae9f106119440148b8e43e 37642 iguanair-reflasher_1.0pre1_all.deb
+Files: 
+ bfc6ee507418130bfb706d20687b263c 610 utils optional iguanair_1.0pre1.dsc
+ 13ef29fcc696cf06843e98a4148a899c 177564 utils optional iguanair_1.0pre1.tar.gz
+ ce15ea69ea3d059dfe48439ed994a303 70110 utils optional iguanair_1.0pre1_i386.deb
+ a14a49c3911a6cdc48fc1bd8d0af58cf 18120 utils optional iguanair-python_1.0pre1_i386.deb
+ 1a31b1c559af62843606fb3e5d3f001c 37642 utils optional iguanair-reflasher_1.0pre1_all.deb

@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sun, 13 Jan 2013 15:00:14 -0700
+Source: iguanair
+Binary: iguanair iguanair-python iguanair-reflasher
+Architecture: armhf all
+Version: 1.0.4-1
+Distribution: stable
+Urgency: low
+Maintainer: IguanaWorks [support@iguanaworks.net]
+Changed-By: Iguanaworks Support <support@iguanaworks.net>
+Description: 
+ iguanair   - This is the IguanaWorks USB IR daemon/driver and
+ iguanair-python - This is the Python client bindings IguanaWorks USB IR
+ iguanair-reflasher - The program will reflash the IguanaWorks USB IR Transceiver with
+Changes: 
+ iguanair (1.0.4-1) stable; urgency=low
+ .
+   * 1.0.4 Iguanaworks Release
+   * Various packaging improvement to be standards compliant.
+Checksums-Sha1: 
+ a0f3b9439b47fca142f79c2d973e03c57cbb911f 76702 iguanair_1.0.4-1_armhf.deb
+ 064fedb26628b39b5db6bbb03fbb7e62068a3da4 18962 iguanair-python_1.0.4-1_armhf.deb
+ 066dfe75b9595e48da965da482932ab8cf4fb3ca 47424 iguanair-reflasher_1.0.4-1_all.deb
+Checksums-Sha256: 
+ 77ebbed8c0942fe940b165589b6c17a8dc26f73ea2c1fafcb47a943f36467d1a 76702 iguanair_1.0.4-1_armhf.deb
+ d8e2999f444468fa6004677037251da0f9b63f8db24c9fdb37db478194273729 18962 iguanair-python_1.0.4-1_armhf.deb
+ 222de9e4da2550bb810229baa8810e9645fca2f885b8005968595643304f05dc 47424 iguanair-reflasher_1.0.4-1_all.deb
+Files: 
+ 1182d5ec3d2b0eda081eab108f4962bb 76702 utils optional iguanair_1.0.4-1_armhf.deb
+ 8e374f99d24ecaf1615f5731802224a8 18962 utils optional iguanair-python_1.0.4-1_armhf.deb
+ eab96c908969f090a983e28dad1f85c1 47424 utils optional iguanair-reflasher_1.0.4-1_all.deb
