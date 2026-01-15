@@ -5,12 +5,12 @@ buttons:
   - title: Home
     url: /
   - title: Serial Transceiver
-    url: /products/serial-transceiver.md
+    url: /products/serial-transceiver.html
   - title: USB IR Transceiver
-    url: /products/usb-ir-transceiver.md
+    url: /products/usb-ir-transceiver.html
   - title: Wired IR Emitter
-    url:  /products/wired-ir-emitter.md
+    url:  /products/wired-ir-emitter.html
   - title: Wired IR Receiver
-    url: /products/wired-ir-receiver.md
+    url: /products/wired-ir-receiver.html
   - title: Stereo Mono Splitter
-    url: /products/stereo-mono-splitter.md
+    url: /products/stereo-mono-splitter.html
