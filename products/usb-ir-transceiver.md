@@ -15,7 +15,7 @@ USB device to send and receive IR: have your computer send IR signals to your DV
 The difference between the three version are how IR is transmitted and received:
 
 - **Dual Socket**: Contains two stereo 3.5mm jacks for connecting [wired IR emitters](/products/wired-ir-emitter.html) (also called blasters). Each jack can control two independent transmit channels, enabling a total of 4 independent IR sending channels. To transmit IR using this device, you need one of our [IR Emitters](/products/wired-ir-emitter.html) per channel. To use two channels per socket, you need a [stereo->mono adapter](/products/stereo-mono-splitter.html). Device has one on-board receive unit.
-- **Socket Receive**: One stereo 3.5mm jack for connecting [wired IR emitters](/product/wired-ir-emitter.html) and one stereo 3.5mm jack for connecting a [wired receiver](/products/wired-ir-receiver.html).
+- **Socket Receive**: One stereo 3.5mm jack for connecting [wired IR emitters](/products/wired-ir-emitter.html) and one stereo 3.5mm jack for connecting a [wired receiver](/products/wired-ir-receiver.html).
 
 ## Transmit Channels
 
@@ -25,6 +25,8 @@ The difference between the three version are how IR is transmitted and received:
 | Socket Receive | Channels 1 & 2\* | Receive Socket |
 
 ![](images/USB_Transceiver-ShowChannels-300x132.jpg)
+
+
 
 \* Channel only accessible with [stereo->mono adapter](/products/stereo-mono-splitter.html) Uses on-board LED Requires [wired IR emitter](/products/wired-ir-emitter.html)
 
