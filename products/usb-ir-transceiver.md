@@ -25,7 +25,8 @@ The difference between the three version are how IR is transmitted and received:
 | Socket Receive | Channels 1 & 2\* | Receive Socket |
 
 ![](images/USB_Transceiver-ShowChannels-300x132.jpg)
-\* Channel only accessible with [stereo->mono adapter](/product/stereo-mono-splitter.html) Uses on-board LED Requires [wired IR emitter](/product/wired-ir-emitter.html)
+
+\* Channel only accessible with [stereo->mono adapter](/products/stereo-mono-splitter.html) Uses on-board LED Requires [wired IR emitter](/products/wired-ir-emitter.html)
 
 ## Receive Channels
 
